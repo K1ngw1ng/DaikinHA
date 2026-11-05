@@ -15,10 +15,11 @@ class DaikinOneEntity(CoordinatorEntity[DaikinOneCoordinator]):
     def __init__(self, coordinator: DaikinOneCoordinator) -> None:
         super().__init__(coordinator)
         info = coordinator.api_info
+        brand = str(info.get("brand", "daikin"))
         self._attr_device_info = DeviceInfo(
             identifiers={(DOMAIN, coordinator.config_entry.unique_id)},
             name=coordinator.data.get("name") or "Daikin One",
-            manufacturer=str(info.get("brand", "daikin")).title(),
+            manufacturer={"dk": "Daikin"}.get(brand, brand.title()),
             model=info.get("model"),
             sw_version=info.get("firmware"),
         )

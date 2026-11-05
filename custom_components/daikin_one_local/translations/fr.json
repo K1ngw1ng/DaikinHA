@@ -1,0 +1,37 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Daikin One Local",
+        "description": "Activez d'abord l'API locale sur le thermostat (Paramètres, Wi-Fi, API locale). Elle ne peut pas être activée depuis l'application.",
+        "data": {
+          "host": "Hôte ou adresse IP",
+          "port": "Port"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de joindre le thermostat. Vérifiez l'adresse et le port, ainsi que l'activation de l'API locale."
+    },
+    "abort": {
+      "already_configured": "Ce thermostat est déjà configuré."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "equipment_state": {
+        "name": "État de l'équipement",
+        "state": {
+          "cooling": "Refroidissement",
+          "overcooling": "Surrefroidissement pour déshumidifier",
+          "heating": "Chauffage",
+          "fan": "Ventilateur",
+          "idle": "Inactif",
+          "waiting_to_cool": "En attente de refroidissement",
+          "waiting_to_heat": "En attente de chauffage",
+          "aux_heat": "Chauffage d'appoint"
+        }
+      }
+    }
+  }
+}

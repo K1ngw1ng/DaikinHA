@@ -1,0 +1,37 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Daikin One Local",
+        "description": "Ative primeiro a API local no termostato (Configurações, Wi-Fi, API local). Ela não pode ser ativada pelo aplicativo.",
+        "data": {
+          "host": "Host ou endereço IP",
+          "port": "Porta"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Não foi possível acessar o termostato. Verifique o endereço e a porta, e se a API local está ativada."
+    },
+    "abort": {
+      "already_configured": "Este termostato já está configurado."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "equipment_state": {
+        "name": "Estado do equipamento",
+        "state": {
+          "cooling": "Resfriando",
+          "overcooling": "Super-resfriamento para desumidificar",
+          "heating": "Aquecendo",
+          "fan": "Ventilador",
+          "idle": "Inativo",
+          "waiting_to_cool": "Aguardando para resfriar",
+          "waiting_to_heat": "Aguardando para aquecer",
+          "aux_heat": "Aquecimento auxiliar"
+        }
+      }
+    }
+  }
+}

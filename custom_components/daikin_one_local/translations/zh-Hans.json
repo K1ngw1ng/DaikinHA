@@ -1,0 +1,37 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Daikin One Local",
+        "description": "请先在恒温器上开启本地 API（设置、Wi-Fi、本地 API）。无法通过应用开启。",
+        "data": {
+          "host": "主机或 IP 地址",
+          "port": "端口"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "无法连接到恒温器。请检查地址和端口，并确认已开启本地 API。"
+    },
+    "abort": {
+      "already_configured": "此恒温器已配置。"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "equipment_state": {
+        "name": "设备状态",
+        "state": {
+          "cooling": "制冷",
+          "overcooling": "除湿过冷",
+          "heating": "制热",
+          "fan": "风扇",
+          "idle": "空闲",
+          "waiting_to_cool": "等待制冷",
+          "waiting_to_heat": "等待制热",
+          "aux_heat": "辅助加热"
+        }
+      }
+    }
+  }
+}
