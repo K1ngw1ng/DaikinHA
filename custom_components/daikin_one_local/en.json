@@ -1,0 +1,37 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Daikin One Local",
+        "description": "Turn on Local API at the thermostat first (Settings, Wi-Fi, Local API). It cannot be enabled from the app.",
+        "data": {
+          "host": "Host or IP address",
+          "port": "Port"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach the thermostat. Check the address and port, and that Local API is switched on."
+    },
+    "abort": {
+      "already_configured": "This thermostat is already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "equipment_state": {
+        "name": "Equipment state",
+        "state": {
+          "cooling": "Cooling",
+          "overcooling": "Overcooling for dehumidification",
+          "heating": "Heating",
+          "fan": "Fan",
+          "idle": "Idle",
+          "waiting_to_cool": "Waiting to cool",
+          "waiting_to_heat": "Waiting to heat",
+          "aux_heat": "Auxiliary heat"
+        }
+      }
+    }
+  }
+}
