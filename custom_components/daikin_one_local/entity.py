@@ -19,7 +19,7 @@ class DaikinOneEntity(CoordinatorEntity[DaikinOneCoordinator]):
         self._attr_device_info = DeviceInfo(
             identifiers={(DOMAIN, coordinator.config_entry.unique_id)},
             name=coordinator.data.get("name") or "Daikin One",
-            manufacturer={"dk": "Daikin"}.get(brand, brand.title()),
+            manufacturer={"dk": "Daikin"}.get(brand.lower(), brand.title()),
             model=info.get("model"),
             sw_version=info.get("firmware"),
         )
