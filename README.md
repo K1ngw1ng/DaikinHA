@@ -6,6 +6,9 @@ It exists because the official Daikin integration and the Daikin HACS integratio
 
 API reference: https://daikinac.com/dakin-one-local-api
 
+> [!IMPORTANT]
+> This project is an independent, open-source community integration and is not affiliated with, authorized, maintained, or endorsed by Daikin Comfort Technologies or any of its affiliates. Use this integration at your own risk. 
+
 ## Features
 
 **Climate entity**
